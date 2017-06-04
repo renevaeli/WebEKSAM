@@ -13,10 +13,10 @@ $(document).ready(function() {
     url: "kylastajad.php",
     data: data,
     success: function(data) {
-      alert(data);
+      //alert(data);
       var obj = JSON.parse(data);
-      alert(obj);
-      $("#visitorCount").html(obj.visitorCount);      
+      //alert(obj);
+      $("#visitorCount").html(obj.visitorCount);
       $("#lastVisitTime").html(obj.visitTime);
 
     }
